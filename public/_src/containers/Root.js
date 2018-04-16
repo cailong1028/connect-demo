@@ -4,7 +4,8 @@ import {Provider} from 'react-redux';
 import {createStore} from 'redux';
 
 import ConnectCounter from './ConnectCounter';
-import reducers from '../reducers'
+import reducers from '../reducers';
+import News from '../router/News';
 
 const store = createStore(reducers);
 

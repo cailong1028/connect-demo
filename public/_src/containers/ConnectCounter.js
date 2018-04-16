@@ -4,7 +4,7 @@ import Counter from '../components/Counter';
 
 const mapStateToProps = (state) => {
     return {
-        countNumber: state.count
+        countNumber: state.count2.countNumber
     }
 }
 

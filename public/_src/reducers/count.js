@@ -1,10 +1,10 @@
-export default function count(state = 0, action){
+export default function count(state = {countNumber: 0}, action){
     switch(action.type){
         case 'add':
-            return state + 1;
+            return {countNumber: state.countNumber + 1};
         case 'reduce':
-            return state - 1;
+            return {countNumber: state.countNumber - 1};
         default:
-            return state;
+            return {countNumber: state.countNumber};
     }
 }
