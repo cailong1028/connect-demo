@@ -1,8 +1,8 @@
 var path = require('path');
 
 module.exports = {
-    devtool: 'eval-source-map',//由bundle.js映射到origin文件，容易在浏览器调试
-    entry: __dirname + "/public/__src/main.js",
+    devtool: 'source-map',//由bundle.js映射到origin文件，容易在浏览器调试
+    entry: __dirname + "/public/src/main.js",
     output: {
         path: __dirname + '/public',
         filename: "bundle.js"

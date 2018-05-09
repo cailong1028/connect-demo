@@ -7,6 +7,8 @@ export default function counter2(state = 0, action) {
             return state + 1;
         case 'DECREMENT_COUNTER':
             return state - 1;
+        case 'RENDER':
+            return 0;
         default:
             return state
     }
